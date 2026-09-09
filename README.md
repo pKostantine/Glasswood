@@ -1,6 +1,5 @@
 # Glasswood
-Living wallpaper for macOS, looping nature scenes with ambient sound.
-
+**Living wallpaper for macOS, looping nature scenes with ambient sound. **
 
 Glasswood replaces your static desktop picture with a looping video that sits behind your icons and keeps playing while you work. Pick a scene from the library, and it fills every connected monitor with matching ambient audio. Video and sound can be toggled independently, so you can keep the crackle of a campfire without the picture, or the picture without the sound.
 
@@ -17,28 +16,21 @@ Glasswood replaces your static desktop picture with a looping video that sits be
 
 ---
 
-## Requirements
-
-| | |
-|---|---|
-| macOS | 12 Monterey or later |
-| Xcode Command Line Tools | `xcode-select --install` |
-| yt-dlp | `brew install yt-dlp` — asset prep only |
-| ffmpeg | `brew install ffmpeg` — asset prep only |
-
-`yt-dlp` and `ffmpeg` are only needed to build the scene library. The finished app has no runtime dependencies.
-
----
-
 ## Install
 
-Download the latest `Glasswood-Vx.y.z.dmg` from [Releases](../../releases), open it, and drag **Glasswood** into Applications.
+Grab the latest `Glasswood-Vx.y.z.dmg` from [Releases](../../releases), open it, and drag **Glasswood** into Applications. That's the whole install — the scenes are already inside the app, and there's nothing else to download or set up.
+
+Requires macOS 12 Monterey or later.
 
 The app is ad-hoc signed rather than notarized, so macOS will refuse to open it on first launch. Right-click the app → **Open** → **Open** to get past Gatekeeper. You only need to do this once.
 
 ---
 
-## Build from source
+## Building it yourself
+
+Only needed if you want to change the scene library or the app itself — installing from the DMG above requires none of this.
+
+You'll need the Xcode Command Line Tools (`xcode-select --install`), plus `yt-dlp` and `ffmpeg` (`brew install yt-dlp ffmpeg`) to build the scene library. The finished app has no runtime dependencies.
 
 ```bash
 git clone https://github.com/pKostantine/glasswood.git

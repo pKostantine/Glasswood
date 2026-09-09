@@ -1,0 +1,7 @@
+assets/
+Glasswood.app/
+*.dmg
+dmg/
+*.iconset/
+.DS_Store
+*.bak

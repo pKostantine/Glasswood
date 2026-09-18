@@ -1,5 +1,5 @@
 # Glasswood
-**Living wallpaper for macOS, looping nature scenes with ambient sound. **
+**Living wallpaper for macOS, looping nature scenes with ambient sound.**
 
 Glasswood replaces your static desktop picture with a looping video that sits behind your icons and keeps playing while you work. Pick a scene from the library, and it fills every connected monitor with matching ambient audio. Video and sound can be toggled independently, so you can keep the crackle of a campfire without the picture, or the picture without the sound.
 
@@ -33,8 +33,8 @@ Only needed if you want to change the scene library or the app itself — instal
 You'll need the Xcode Command Line Tools (`xcode-select --install`), plus `yt-dlp` and `ffmpeg` (`brew install yt-dlp ffmpeg`) to build the scene library. The finished app has no runtime dependencies.
 
 ```bash
-git clone https://github.com/pKostantine/glasswood.git
-cd glasswood
+git clone https://github.com/pKostantine/Glasswood.git
+cd Glasswood
 
 ./prep.sh              # download scene clips + generate thumbnails
 ./build.sh             # compile and bundle everything into Glasswood.app
